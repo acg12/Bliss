@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BD0BB622A1A1A5C00AF1E2D /* TileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0BB612A1A1A5C00AF1E2D /* TileNode.swift */; };
+		0BD0BB642A1A1AEE00AF1E2D /* Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0BB632A1A1AEE00AF1E2D /* Tiles.swift */; };
 		0BDE95182A1600D700C19D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE95172A1600D700C19D35 /* AppDelegate.swift */; };
 		0BDE951A2A1600D700C19D35 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BDE95192A1600D700C19D35 /* GameScene.sks */; };
 		0BDE951C2A1600D700C19D35 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BDE951B2A1600D700C19D35 /* Actions.sks */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		0BD0BB112A16321B00AF1E2D /* Bliss.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bliss.entitlements; sourceTree = "<group>"; };
+		0BD0BB612A1A1A5C00AF1E2D /* TileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileNode.swift; sourceTree = "<group>"; };
+		0BD0BB632A1A1AEE00AF1E2D /* Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiles.swift; sourceTree = "<group>"; };
 		0BDE95142A1600D700C19D35 /* Bliss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bliss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDE95172A1600D700C19D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BDE95192A1600D700C19D35 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -80,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BD0BB662A1A1B3100AF1E2D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0BD0BB632A1A1AEE00AF1E2D /* Tiles.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		0BDE950B2A1600D700C19D35 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,8 @@
 				0BD0BB112A16321B00AF1E2D /* Bliss.entitlements */,
 				0BDE95172A1600D700C19D35 /* AppDelegate.swift */,
 				0BDE95192A1600D700C19D35 /* GameScene.sks */,
+				0BD0BB612A1A1A5C00AF1E2D /* TileNode.swift */,
+				0BD0BB662A1A1B3100AF1E2D /* Constants */,
 				0BDE951B2A1600D700C19D35 /* Actions.sks */,
 				0BDE951D2A1600D700C19D35 /* GameScene.swift */,
 				0BDE951F2A1600D700C19D35 /* GameViewController.swift */,
@@ -267,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BDE951E2A1600D700C19D35 /* GameScene.swift in Sources */,
+				0BD0BB642A1A1AEE00AF1E2D /* Tiles.swift in Sources */,
+				0BD0BB622A1A1A5C00AF1E2D /* TileNode.swift in Sources */,
 				0BDE95202A1600D700C19D35 /* GameViewController.swift in Sources */,
 				0BDE95182A1600D700C19D35 /* AppDelegate.swift in Sources */,
 			);

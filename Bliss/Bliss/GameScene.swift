@@ -11,17 +11,29 @@ import Foundation
 
 class GameScene: SKScene {
     var backgroundNode: SKNode!
-    var userNode: SKNode!
-    var shopBtnNode: SKNode!
-    var furnitureNodes: [SKNode] = []
+    var editBtnNode: SKSpriteNode!
+//    var userNode: SKNode!
+//    var shopBtnNode: SKNode!
+//    var furnitureNodes: [SKNode] = []
     
     var previousCameraPoint = CGPoint.zero
     var cameraNode: SKCameraNode!
     
+    var tilesArray: [SKShapeNode] = []
+    
     override func didMove(to view: SKView) {
+        // init attributes
+        backgroundNode = self.childNode(withName: "Background")
+        editBtnNode = SKSpriteNode(color: .blue, size: .init(width: 50, height: 50))
+        
+        // edit position
+        editBtnNode.position.x = self.frame.maxX - 75
+        editBtnNode.position.y = self.frame.maxY - 75
+        editBtnNode.zPosition = 100
+        
+        
         // add camera
         let cameraNode = SKCameraNode()
-            
         cameraNode.position = CGPoint.zero
             
         self.addChild(cameraNode)
@@ -32,7 +44,8 @@ class GameScene: SKScene {
         // Add the gesture recognizer to the scene's view
         self.view!.addGestureRecognizer(panGestureRecognizer)
         
-        backgroundNode = self.childNode(withName: "Background")
+        // add pinned objects
+        self.camera?.addChild(editBtnNode)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -82,5 +95,8 @@ class GameScene: SKScene {
         
         let newPosition = CGPoint(x: newX, y: newY)
         camera.position = newPosition
+        
+        // Reset the position of the editBtnNode
+        editBtnNode.position = CGPoint(x: self.frame.maxX - 75, y: self.frame.maxY - 75)
     }
 }
