@@ -7,7 +7,12 @@
 
 import Foundation
 
-extension Tile {
+extension TileNode {
     static let width = 45.7
     static let height = 45.7
+}
+
+enum CollisionType: UInt32 {
+    case inventory = 1
+    case tile = 2
 }

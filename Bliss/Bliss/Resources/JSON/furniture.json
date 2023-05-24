@@ -1,0 +1,9 @@
+[
+	{
+		"name": "Wooden Table",
+		"image": "Table",
+        "price": 100,
+        "offsetY": 12.0,
+        "inventoryImage": "Table Inventory Card",
+	}
+]
