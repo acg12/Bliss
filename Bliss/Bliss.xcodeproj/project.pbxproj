@@ -11,6 +11,7 @@
 		0B0041B82A1E243200037F94 /* Bliss BGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B0041B72A1E243200037F94 /* Bliss BGM.mp3 */; };
 		0B0041BA2A1E24A100037F94 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0041B92A1E24A100037F94 /* MenuScene.swift */; };
 		0B0041C42A1E6C6E00037F94 /* Boba Milky.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B0041C32A1E6C6E00037F94 /* Boba Milky.otf */; };
+		0B0041C62A1FAE1500037F94 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B0041C52A1FAE1500037F94 /* GameScene.sks */; };
 		0B23D7A62A1B62700062EA56 /* FurnitureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B23D7A52A1B62700062EA56 /* FurnitureNode.swift */; };
 		0B23D7A82A1B627D0062EA56 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B23D7A72A1B627D0062EA56 /* Utils.swift */; };
 		0B23D7AB2A1B67BE0062EA56 /* TileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B23D7AA2A1B67BE0062EA56 /* TileManager.swift */; };
@@ -21,7 +22,6 @@
 		0BD0BB622A1A1A5C00AF1E2D /* TileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0BB612A1A1A5C00AF1E2D /* TileNode.swift */; };
 		0BD0BB642A1A1AEE00AF1E2D /* Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0BB632A1A1AEE00AF1E2D /* Tiles.swift */; };
 		0BDE95182A1600D700C19D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE95172A1600D700C19D35 /* AppDelegate.swift */; };
-		0BDE951A2A1600D700C19D35 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0BDE95192A1600D700C19D35 /* GameScene.sks */; };
 		0BDE951E2A1600D700C19D35 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE951D2A1600D700C19D35 /* GameScene.swift */; };
 		0BDE95202A1600D700C19D35 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE951F2A1600D700C19D35 /* GameViewController.swift */; };
 		0BDE95232A1600D700C19D35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDE95212A1600D700C19D35 /* Main.storyboard */; };
@@ -54,6 +54,7 @@
 		0B0041B72A1E243200037F94 /* Bliss BGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bliss BGM.mp3"; sourceTree = "<group>"; };
 		0B0041B92A1E24A100037F94 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		0B0041C32A1E6C6E00037F94 /* Boba Milky.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Boba Milky.otf"; sourceTree = "<group>"; };
+		0B0041C52A1FAE1500037F94 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		0B23D7A52A1B62700062EA56 /* FurnitureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureNode.swift; sourceTree = "<group>"; };
 		0B23D7A72A1B627D0062EA56 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		0B23D7AA2A1B67BE0062EA56 /* TileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileManager.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		0BD0BB632A1A1AEE00AF1E2D /* Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiles.swift; sourceTree = "<group>"; };
 		0BDE95142A1600D700C19D35 /* Bliss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bliss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDE95172A1600D700C19D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BDE95192A1600D700C19D35 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		0BDE951D2A1600D700C19D35 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		0BDE951F2A1600D700C19D35 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		0BDE95222A1600D700C19D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,8 +115,8 @@
 		0B0041BD2A1E6BA400037F94 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				0BDE95192A1600D700C19D35 /* GameScene.sks */,
 				0B0041B52A1E236600037F94 /* MenuScene.sks */,
+				0B0041C52A1FAE1500037F94 /* GameScene.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -346,13 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BDE95232A1600D700C19D35 /* Main.storyboard in Resources */,
-				0BDE951A2A1600D700C19D35 /* GameScene.sks in Resources */,
 				0BDE95252A1600D800C19D35 /* Assets.xcassets in Resources */,
 				0B0041C42A1E6C6E00037F94 /* Boba Milky.otf in Resources */,
 				0B23D7DB2A1C78F80062EA56 /* inventory.json in Resources */,
 				0BDE95282A1600D800C19D35 /* LaunchScreen.storyboard in Resources */,
 				0B23D7B22A1B6AB90062EA56 /* furniture.json in Resources */,
 				0B0041B62A1E236600037F94 /* MenuScene.sks in Resources */,
+				0B0041C62A1FAE1500037F94 /* GameScene.sks in Resources */,
 				0B0041B82A1E243200037F94 /* Bliss BGM.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

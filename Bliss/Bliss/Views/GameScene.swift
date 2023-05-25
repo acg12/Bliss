@@ -31,7 +31,6 @@ class GameScene: SKScene {
     var inventoryMenuNode: SKSpriteNode!
     var storeBtnNode: SKSpriteNode!
     
-    var backgroundSound: SKAudioNode!
 //    var userNode: SKNode!
 //    var shopBtnNode: SKNode!
 //    var furnitureNodes: [SKNode] = []
@@ -48,7 +47,7 @@ class GameScene: SKScene {
         // edit position
         editBtnNode.position.x = self.frame.maxX - 75
         editBtnNode.position.y = self.frame.maxY - 75
-        editBtnNode.zPosition = 100
+        editBtnNode.zPosition = 500
         
         // generate furniture
         inventoryManager.generateInventory()
@@ -70,11 +69,7 @@ class GameScene: SKScene {
             
             self.addChild(t)
         }
-        // add audio
-        if let musicURL = Bundle.main.url(forResource: "Bliss BGM", withExtension: "mp3") {
-            backgroundSound = SKAudioNode(url: musicURL)
-            self.addChild(backgroundSound)
-        }
+        
         
         // add camera
         let cameraNode = SKCameraNode()
