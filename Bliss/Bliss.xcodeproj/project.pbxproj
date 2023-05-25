@@ -19,6 +19,9 @@
 		0B23D7B22A1B6AB90062EA56 /* furniture.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B23D7B12A1B6AB90062EA56 /* furniture.json */; };
 		0B23D7D72A1C76170062EA56 /* InventoryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B23D7D62A1C76170062EA56 /* InventoryNode.swift */; };
 		0B23D7DB2A1C78F80062EA56 /* inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B23D7DA2A1C78F80062EA56 /* inventory.json */; };
+		0BA005752A1FE798000321A5 /* EditButtonSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0BA005732A1FE798000321A5 /* EditButtonSound.mp3 */; };
+		0BA005762A1FE798000321A5 /* MoveInventorySound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0BA005742A1FE798000321A5 /* MoveInventorySound.mp3 */; };
+		0BA005782A1FE8B3000321A5 /* StoreButtonSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0BA005772A1FE8B3000321A5 /* StoreButtonSound.mp3 */; };
 		0BD0BB622A1A1A5C00AF1E2D /* TileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0BB612A1A1A5C00AF1E2D /* TileNode.swift */; };
 		0BD0BB642A1A1AEE00AF1E2D /* Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0BB632A1A1AEE00AF1E2D /* Tiles.swift */; };
 		0BDE95182A1600D700C19D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDE95172A1600D700C19D35 /* AppDelegate.swift */; };
@@ -63,6 +66,9 @@
 		0B23D7D62A1C76170062EA56 /* InventoryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryNode.swift; sourceTree = "<group>"; };
 		0B23D7DA2A1C78F80062EA56 /* inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = inventory.json; sourceTree = "<group>"; };
 		0B47F6BF2A1F02860080A6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0BA005732A1FE798000321A5 /* EditButtonSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EditButtonSound.mp3; sourceTree = "<group>"; };
+		0BA005742A1FE798000321A5 /* MoveInventorySound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MoveInventorySound.mp3; sourceTree = "<group>"; };
+		0BA005772A1FE8B3000321A5 /* StoreButtonSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StoreButtonSound.mp3; sourceTree = "<group>"; };
 		0BD0BB112A16321B00AF1E2D /* Bliss.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bliss.entitlements; sourceTree = "<group>"; };
 		0BD0BB612A1A1A5C00AF1E2D /* TileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileNode.swift; sourceTree = "<group>"; };
 		0BD0BB632A1A1AEE00AF1E2D /* Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiles.swift; sourceTree = "<group>"; };
@@ -108,6 +114,9 @@
 		0B0041B42A1E214200037F94 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				0BA005772A1FE8B3000321A5 /* StoreButtonSound.mp3 */,
+				0BA005732A1FE798000321A5 /* EditButtonSound.mp3 */,
+				0BA005742A1FE798000321A5 /* MoveInventorySound.mp3 */,
 				0B0041B72A1E243200037F94 /* Bliss BGM.mp3 */,
 			);
 			path = Audio;
@@ -349,11 +358,14 @@
 			files = (
 				0BDE95232A1600D700C19D35 /* Main.storyboard in Resources */,
 				0BDE95252A1600D800C19D35 /* Assets.xcassets in Resources */,
+				0BA005752A1FE798000321A5 /* EditButtonSound.mp3 in Resources */,
 				0B0041C42A1E6C6E00037F94 /* Boba Milky.otf in Resources */,
 				0B23D7DB2A1C78F80062EA56 /* inventory.json in Resources */,
 				0BDE95282A1600D800C19D35 /* LaunchScreen.storyboard in Resources */,
 				0B23D7B22A1B6AB90062EA56 /* furniture.json in Resources */,
 				0B0041B62A1E236600037F94 /* MenuScene.sks in Resources */,
+				0BA005782A1FE8B3000321A5 /* StoreButtonSound.mp3 in Resources */,
+				0BA005762A1FE798000321A5 /* MoveInventorySound.mp3 in Resources */,
 				0B0041C62A1FAE1500037F94 /* GameScene.sks in Resources */,
 				0B0041B82A1E243200037F94 /* Bliss BGM.mp3 in Resources */,
 			);

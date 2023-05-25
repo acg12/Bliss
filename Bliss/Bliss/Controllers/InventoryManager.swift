@@ -20,6 +20,8 @@ class InventoryManager {
             let node = InventoryNode(id: i, furniture: f.furniture, isPlaced: f.isPlaced)
             node.zPosition = 100
             node.position = CGPoint(x: f.x, y: (f.y + f.furniture.offsetY))
+            node.size.width = f.furniture.width
+            node.size.height = f.furniture.height
             node.name = "inventory_\(f.furniture.name)"
             
             inventory.append(node)
@@ -52,11 +54,11 @@ class InventoryManager {
                     let offsetY: CGFloat = (node.size.height + rowGutter) * CGFloat(row)
                     
                     let posX: CGFloat = menu.position.x + 19 + offsetX - menu.size.width/2 + node.size.width/2
-                    let posY: CGFloat = menu.position.y + 51 + offsetY
+                    let posY: CGFloat = menu.position.y - 51 - offsetY + menu.size.height/2 - node.size.height/2
                     
                     node.position.x = posX
                     node.position.y = posY
-                    node.zPosition = 102
+                    node.zPosition = 151
                     generatedCards.append(node)
                     self.inventoryCards.append(node)
                 } else {

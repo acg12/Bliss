@@ -30,10 +30,9 @@ class GameScene: SKScene {
     var editBtnNode: SKSpriteNode!
     var inventoryMenuNode: SKSpriteNode!
     var storeBtnNode: SKSpriteNode!
+    var characterNode: SKSpriteNode!
     
-//    var userNode: SKNode!
 //    var shopBtnNode: SKNode!
-//    var furnitureNodes: [SKNode] = []
     
     var previousCameraScale = CGFloat()
     var previousCameraPoint = CGPoint.zero
@@ -46,7 +45,8 @@ class GameScene: SKScene {
         
         // edit position
         editBtnNode.position.x = self.frame.maxX - 75
-        editBtnNode.position.y = self.frame.maxY - 75
+        editBtnNode.position.y = self.frame.maxY - 50
+        editBtnNode.size = CGSize(width: 50.0, height: 50.0)
         editBtnNode.zPosition = 500
         
         // generate furniture
@@ -70,6 +70,8 @@ class GameScene: SKScene {
             self.addChild(t)
         }
         
+        // Add character
+        addCharacter()
         
         // add camera
         let cameraNode = SKCameraNode()
@@ -90,6 +92,25 @@ class GameScene: SKScene {
         let pinchGesture = UIPinchGestureRecognizer()
         pinchGesture.addTarget(self, action: #selector(pinchGestureAction(_:)))
         self.view!.addGestureRecognizer(pinchGesture)
+    }
+    
+    func addCharacter() {
+        let spriteSize = CGSize(width: 80, height: 80)
+        let spriteNode = SKSpriteNode(imageNamed: "Bleu-0")
+        
+        spriteNode.size = spriteSize
+        spriteNode.position = CGPoint(x: -5.0, y: -118)
+        spriteNode.zPosition = 102
+        self.addChild(spriteNode)
+        
+        let textureNames = ["Bleu-1", "Bleu-2", "Bleu-3", "Bleu-4", "Bleu-5", "Bleu-6", "Bleu-7", "Bleu-8", "Bleu-9", "Bleu-10", "Bleu-11", "Bleu-12", "Bleu-13", "Bleu-14", "Bleu-15", "Bleu-16", "Bleu-17", "Bleu-18", "Bleu-19", "Bleu-20", "Bleu-21", "Bleu-22", "Bleu-23", "Bleu-24", "Bleu-25", "Bleu-26"]
+
+        let textures = textureNames.map { SKTexture(imageNamed: $0) }
+        let animationAction = SKAction.animate(with: textures, timePerFrame: 0.07)
+        let repeatAction = SKAction.repeatForever(animationAction)
+        spriteNode.run(repeatAction)
+        
+        characterNode = spriteNode
     }
     
     func activateTileAtLocation(_ location: CGPoint) {
@@ -142,7 +163,7 @@ class GameScene: SKScene {
                         print("Failed to extract inventory index")
                         break
                     }
-                    
+
                     let selectedInv = inventoryManager.inventory[invIdx]
                     if !selectedInv.isPlaced {
                         print("clicked card")
@@ -150,9 +171,9 @@ class GameScene: SKScene {
                         currentFurniture = selectedInv
                         isHoldingFurniture = true
                         inventoryIndex = invIdx
-                        
-                        self.addChild(selectedInv)
-                        
+
+//                        self.addChild(selectedInv)
+
                         // TODO: handle when user click card but didn't drag it
                     }
                 }
@@ -216,11 +237,17 @@ class GameScene: SKScene {
             currentFurniture = nil
             isHoldingFurniture = false
             inventoryIndex = nil
+            
+            let storeSound = SKAction.playSoundFileNamed("StoreButtonSound.mp3", waitForCompletion: false)
+            self.run(storeSound)
         }
     }
     
     func handleEditBtn() {
         isEditing.toggle()
+
+        let editSound = SKAction.playSoundFileNamed("EditButtonSound.mp3", waitForCompletion: false)
+        self.run(editSound)
         
         if isEditing == false {
             editBtnNode.texture = SKTexture(imageNamed: "Edit Button")
@@ -238,7 +265,7 @@ class GameScene: SKScene {
             inventoryMenuNode = SKSpriteNode(texture: inventoryTexture, size: inventoryTexture.size())
             inventoryMenuNode.position.x = self.frame.midX / 2 - inventoryMenuNode.size.width * 1.15
             inventoryMenuNode.position.y = self.frame.midY
-            inventoryMenuNode.zPosition = 101
+            inventoryMenuNode.zPosition = 150
             
             self.camera?.addChild(inventoryMenuNode)
             
@@ -278,6 +305,19 @@ class GameScene: SKScene {
         } else {
             guard let furn = self.currentFurniture as? InventoryNode else {return}
             
+            // check if furniture is already on screen
+            var childExists = false
+            for child in self.children {
+                if furn == child {
+                    childExists = true
+                    break
+                }
+            }
+            
+            if !childExists {
+                self.addChild(furn)
+            }
+            
             let translation = sender.translation(in: self.view)
             var newX = translation.x
             var newY = translation.y * -1
@@ -304,6 +344,8 @@ class GameScene: SKScene {
                 print("ended holding furniture")
                 
                 isHoldingFurniture = false
+                let moveSound = SKAction.playSoundFileNamed("MoveInventorySound.mp3", waitForCompletion: false)
+                self.run(moveSound)
             }
             
             if sender.state == .began {

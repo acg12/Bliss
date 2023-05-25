@@ -2,11 +2,13 @@
 	{
         "furniture":
         {
-            "name": "Wooden Table",
+            "name": "Blue Table",
             "image": "Table",
             "price": 100,
             "offsetY": 12.0,
             "inventoryImage": "Table Inventory Card",
+            "width": 54.0,
+            "height": 54.0,
         },
         "x": 0.0,
         "y": 13.0,
@@ -15,14 +17,76 @@
     {
         "furniture":
         {
-            "name": "Wooden Table",
+            "name": "Blue Table",
             "image": "Table",
             "price": 100,
             "offsetY": 12.0,
             "inventoryImage": "Table Inventory Card",
+            "width": 54.0,
+            "height": 54.0,
         },
         "x": -200.0,
         "y": -100.0,
         "isPlaced": false,
+    },
+    {
+        "furniture":
+        {
+            "name": "Blue Chair",
+            "image": "Chair",
+            "price": 100,
+            "offsetY": 12.0,
+            "inventoryImage": "Chair Inventory Card",
+            "width": 32.0,
+            "height": 32.0,
+        },
+        "x": 0.0,
+        "y": 0.0,
+        "isPlaced": false
+    },
+    {
+        "furniture":
+        {
+            "name": "Blue Chair",
+            "image": "Chair",
+            "price": 100,
+            "offsetY": 12.0,
+            "inventoryImage": "Chair Inventory Card",
+            "width": 32.0,
+            "height": 32.0,
+        },
+        "x": 0.0,
+        "y": 0.0,
+        "isPlaced": false
+    },
+    {
+        "furniture":
+        {
+            "name": "Plant",
+            "image": "Plant",
+            "price": 50,
+            "offsetY": 20.0,
+            "inventoryImage": "Plant Inventory Card",
+            "width": 45.0,
+            "height": 45.0,
+        },
+        "x": 0.0,
+        "y": 0.0,
+        "isPlaced": false
+    },
+    {
+        "furniture":
+        {
+            "name": "Plant",
+            "image": "Plant",
+            "price": 50,
+            "offsetY": 20.0,
+            "inventoryImage": "Plant Inventory Card",
+            "width": 45.0,
+            "height": 45.0,
+        },
+        "x": 0.0,
+        "y": 0.0,
+        "isPlaced": false
     }
 ]

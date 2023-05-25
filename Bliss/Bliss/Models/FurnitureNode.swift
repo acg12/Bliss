@@ -35,4 +35,6 @@ class Furniture: Codable {
     var price: Int
     var offsetY: CGFloat
     var inventoryImage: String
+    var width: CGFloat
+    var height: CGFloat
 }
