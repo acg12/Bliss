@@ -62,6 +62,7 @@
 		0B23D7B12A1B6AB90062EA56 /* furniture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = furniture.json; sourceTree = "<group>"; };
 		0B23D7D62A1C76170062EA56 /* InventoryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryNode.swift; sourceTree = "<group>"; };
 		0B23D7DA2A1C78F80062EA56 /* inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = inventory.json; sourceTree = "<group>"; };
+		0B47F6BF2A1F02860080A6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0BD0BB112A16321B00AF1E2D /* Bliss.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bliss.entitlements; sourceTree = "<group>"; };
 		0BD0BB612A1A1A5C00AF1E2D /* TileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileNode.swift; sourceTree = "<group>"; };
 		0BD0BB632A1A1AEE00AF1E2D /* Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiles.swift; sourceTree = "<group>"; };
@@ -208,6 +209,7 @@
 		0BDE95162A1600D700C19D35 /* Bliss */ = {
 			isa = PBXGroup;
 			children = (
+				0B47F6BF2A1F02860080A6D3 /* Info.plist */,
 				0BD0BB112A16321B00AF1E2D /* Bliss.entitlements */,
 				0BDE95172A1600D700C19D35 /* AppDelegate.swift */,
 				0B0041BD2A1E6BA400037F94 /* Scenes */,
@@ -568,6 +570,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WML2Q26MG6;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bliss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -600,6 +603,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WML2Q26MG6;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bliss/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
