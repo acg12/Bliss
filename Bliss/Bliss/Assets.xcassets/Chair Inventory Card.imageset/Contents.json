@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Untitled_Artwork 2.png",
+      "filename" : "Chair Inventory Card.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Chair Inventory Card@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Chair Inventory Card@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

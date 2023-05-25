@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Untitled_Artwork 2.png",
+      "filename" : "Table Inventory Card.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Table Inventory Card@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Table Inventory Card@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
